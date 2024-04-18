@@ -63,7 +63,7 @@ const Main = () => {
       <input
         type="text"
         placeholder="Type here..."
-        className="mt-16 ml-6 sm:w-60 sm:ml-24 md:w-[300px] md:ml-40 lg:w-[450px] xl:w-[550px] xl:ml-72 p-4 rounded-l-full outline-none border-none text-xl pl-10 relative lg:ml-60"
+        className="mt-16 ml-6 w-44 sm:w-60 sm:ml-24 md:w-[300px] md:ml-40 lg:w-[450px] xl:w-[550px] xl:ml-72 p-4 rounded-l-full outline-none border-none text-xl pl-10 relative lg:ml-60"
         value={text}
         onChange={(e) => setText(e.target.value)}
         autoFocus
@@ -87,7 +87,7 @@ const Main = () => {
           />
         )}
       </button>
-      <ul className="flex gap-1 flex-wrap ml-10 lg:ml-28">
+      <ul className="flex gap-1 flex-wrap ml-5 lg:ml-28">
         {data.map((item) => (
           <ToDo
             key={item._id}
