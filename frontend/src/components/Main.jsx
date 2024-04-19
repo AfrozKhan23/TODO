@@ -59,11 +59,11 @@ const Main = () => {
 
   let data = Array.from(toDo);
   return (
-    <div className="">
+    <div className="w">
       <input
         type="text"
         placeholder="Type here..."
-        className="mt-16 ml-6 w-44 sm:w-60 sm:ml-24 md:w-[300px] md:ml-40 lg:w-[450px] xl:w-[550px] xl:ml-72 p-4 rounded-l-full outline-none border-none text-xl pl-10 relative lg:ml-60"
+        className="mt-16 ml-10 w-44 sm:w-60 sm:ml-24 md:w-[300px] md:ml-40 lg:w-[450px] xl:w-[550px] xl:ml-72 p-4 rounded-l-full outline-none border-none text-xl pl-10 relative lg:ml-60"
         value={text}
         onChange={(e) => setText(e.target.value)}
         autoFocus
@@ -71,7 +71,7 @@ const Main = () => {
       <button
         type="submit"
         onClick={toDoId ? updateToDo : addToDo}
-        className="absolute sm:right-[231px] md:right-[175px] top-[140px] lg:right-[250px] xl:right-[310px] bg-yellow-500 outline-yellow-500 border-none w-20 h-[59px] rounded-r-full cursor-pointer"
+        className="absolute right-10vw sm:right-15vw md:right-20vw lg:right-25vw xl:right-30vw top-[140px] bg-yellow-500 outline-yellow-500 border-none w-20 h-[59px] rounded-r-full cursor-pointer"
       >
         {toDoId ? (
           <EditNoteIcon
@@ -81,13 +81,13 @@ const Main = () => {
           />
         ) : (
           <AddIcon
-            className="absolute top-3 left-5  "
+            className="absolute top-3 left-5"
             sx={{ color: "white" }}
             fontSize="large"
           />
         )}
       </button>
-      <ul className="flex gap-1 flex-wrap ml-5 lg:ml-28">
+      <ul className="flex gap-1 flex-wrap ml-8 lg:ml-28">
         {data.map((item) => (
           <ToDo
             key={item._id}
