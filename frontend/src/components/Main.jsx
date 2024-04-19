@@ -87,7 +87,7 @@ const Main = () => {
           />
         )}
       </button>
-      <ul className="flex gap-1 flex-wrap ml-10 lg:ml-28">
+      <ul className="flex gap-1 flex-wrap ml-8 lg:ml-28">
         {data.map((item) => (
           <ToDo
             key={item._id}
