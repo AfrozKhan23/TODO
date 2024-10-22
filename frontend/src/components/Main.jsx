@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import ToDo from "./ToDo";
@@ -81,7 +81,7 @@ const Main = () => {
           />
         ) : (
           <AddIcon
-            className="absolute top-3 left-5  "
+            className="absolute top-3 left-5"
             sx={{ color: "white" }}
             fontSize="large"
           />

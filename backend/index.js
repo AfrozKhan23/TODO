@@ -13,7 +13,6 @@ app.use(cors());
 app.use(express.json());
 connectDb();
 
-// copy this app.get code
 app.get("/", (req, res) => {
   res.send("products api running new deploy");
 });
