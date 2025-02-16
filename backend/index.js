@@ -19,7 +19,7 @@ app.use(express.json());
 connectDb();
 
 app.get("/", (req, res) => {
-  res.send("products api running new deploy");
+  res.send("Hello from server");
 });
 
 app.use("/api", router);
