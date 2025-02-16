@@ -2,7 +2,7 @@ import React from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
-import { baseUrl } from "../url";
+import baseUrl from "../url";
 
 const ToDo = ({ id, text, setUpdateUI, updateMode }) => {
   const deleteToDo = () => {

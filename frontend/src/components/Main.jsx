@@ -3,7 +3,7 @@ import AddIcon from "@mui/icons-material/Add";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import ToDo from "./ToDo";
 import axios from "axios";
-import { baseUrl } from "../url";
+import baseUrl from "../url";
 
 const Main = () => {
   const [toDo, setToDo] = useState([]);

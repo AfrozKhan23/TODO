@@ -1,1 +1,3 @@
-export const baseUrl = `https://todo-api-rrp1.onrender.com/api`;
+const baseUrl = import.meta.env.VITE_BACKEND_URI;
+
+export default baseUrl;
