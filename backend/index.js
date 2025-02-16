@@ -10,10 +10,11 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 const corsOptions = {
-  origin: ["https://todo-pi-eight-42.vercel.app/", "http://localhost:5173"],
+  origin: ["https://todo-pi-eight-42.vercel.app", "http://localhost:5173"],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
 };
+
+app.use(cors(corsOptions));
 app.use(express.json());
 connectDb();
 

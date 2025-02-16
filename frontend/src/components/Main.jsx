@@ -14,7 +14,7 @@ const Main = () => {
   useEffect(() => {
     const getAllTodo = async () => {
       try {
-        const response = await axios.get(`${baseUrl}`);
+        const response = await axios.get(`${baseUrl}/api`);
         setToDo(response.data);
       } catch (error) {
         console.error("Error fetching todos:", error);
@@ -27,7 +27,7 @@ const Main = () => {
   const addToDo = () => {
     if (text === "") return;
     axios
-      .post(`${baseUrl}/post`, { text })
+      .post(`${baseUrl}/api/post`, { text })
       .then((response) => {
         console.log(response.data);
         setUpdateUI((prevState) => !prevState);
@@ -40,7 +40,7 @@ const Main = () => {
 
   const updateToDo = () => {
     axios
-      .put(`${baseUrl}/update/${toDoId}`, { text })
+      .put(`${baseUrl}/api/update/${toDoId}`, { text })
       .then((response) => {
         console.log(response.data);
         setToDoId(null);

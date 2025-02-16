@@ -7,7 +7,7 @@ import baseUrl from "../url";
 const ToDo = ({ id, text, setUpdateUI, updateMode }) => {
   const deleteToDo = () => {
     axios
-      .delete(`${baseUrl}/delete/${id}`)
+      .delete(`${baseUrl}/api/delete/${id}`)
       .then(() => {
         setUpdateUI((prevState) => !prevState);
       })
